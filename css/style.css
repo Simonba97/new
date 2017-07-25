@@ -20,6 +20,9 @@ body, html {
 a {
     text-decoration: none;
 }
+.img-circle {
+    border-radius: 50%;
+}
 .static {
     position: fixed;
     z-index: 9999;
@@ -42,7 +45,7 @@ div#menu.static a{
    padding: 10px;
 }
 section#queSe img {
-
+    width: 20%
 }
 section#queSe img:hover {
    animation: .5s animacion infinite;
@@ -88,11 +91,20 @@ div[id^='contenedor']{
 #contenedor1 {
     display: block;
 }
-
 section#productoEstrella div.w3-display-middle preOrNext {
     cursor: pointer;
 }
-
+section#quienSoy .contentText {
+   text-align: center;
+}
+section#quienSoy img#imgMe {
+    height: 30vh;
+    margin-top: 12px;
+}
+section#quienSoy span#lema {
+    float: right;
+    font-style: italic;
+}
 .iconRight {
     position: absolute;
     top: 55%;
@@ -155,13 +167,30 @@ section#productoEstrella div.w3-display-middle preOrNext {
     section#quienSoy h1 {
        font-size: 30px !important;
     }
+
+    section#quienSoy div.contentText {
+        height: 65vh;
+    }
     section#queSe h1 {
         font-size: 40px !important;
     }
-    section#queSe p {
-        height: 490px;
-        overflow: scroll;
+    section#queSe img {
+        width: 50%;
     }
+    section#queSe .contentImages {
+        width: 50vw;
+        height: 55vh;
+        overflow-x: scroll;
+    }
+
+
+    section#portafolio .contentText, section#quienSoy .contentText {
+        /*background: red;*/
+        width: 62vw;
+        height: 55vh;
+        overflow-x: scroll;
+    }
+
     section#portafolio h1 {
         font-size: 32px !important;
     }
