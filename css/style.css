@@ -1,4 +1,5 @@
-body, h1 {
+body,
+h1 {
     font-family: "Oswald", sans-serif;
     text-shadow: -3px 3px 6px rgba(0, 0, 0, 1);
     -webkit-user-select: none;
@@ -6,29 +7,33 @@ body, h1 {
     -ms-user-select: none;
     user-select: none;
 }
+
 p {
-	font-family: "Inconsolata", sans-serif;
+    font-family: "Inconsolata", sans-serif;
 }
-section[class^='bgimg']{
+
+section[class^='bgimg'] {
     min-height: 100%;
     background-position: center;
     background-size: cover;
 }
-body, html {
+
+body,
+html {
     height: 100%
 }
+
 a {
     text-decoration: none;
 }
-.img-circle {
-    border-radius: 50%;
-}
+
 .static {
     position: fixed;
     z-index: 9999;
     margin: 10px 0 0 20px;
     color: white;
 }
+
 div#menu.static {
     display: grid;
     height: auto;
@@ -41,80 +46,94 @@ div#menu.static {
     padding-top: 5px;
     border-radius: 8px 0 0 8px;
 }
-div#menu.static a{
-   padding: 10px;
-}
-section#queSe img {
-    width: 20%
-}
-section#queSe img:hover {
-   animation: .5s animacion infinite;
-}
-.itemMenu {
 
+div#menu.static a {
+    padding: 10px;
 }
+
+section#queSe img {}
+
+section#queSe img:hover {
+    animation: .5s animacion infinite;
+}
+
+.buttonBasic {
+    border-radius: 5px;
+    padding: 10px 17px;
+    line-height: 19px;
+    height: 19px;
+    box-sizing: content-box;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+    display: inline-block;
+    background-color: rgba(234, 233, 233, 0.2);
+}
+
+.itemMenu {}
+
 .bgimg1 {
     background: url('http://k33.kn3.net/taringa/5/9/8/5/F/2/lennin_rubio/CCD.jpg');
 }
+
 .bgimg2 {
     background: #282828;
 }
+
 .bgimg3 {
     background: #1b1b1b;
 }
+
 .bgimg4 {
     background: #0f0f0f;
 }
+
 .bgimg5 {
     background: black;
 }
+
 .iphoneBack {
     width: 30%;
     margin: 10px;
 }
+
 #capturaInicioApp {
     position: absolute;
     height: 57%;
     top: 30%;
     left: 20.5%;
 }
+
 #capturaProximoPartido {
     position: absolute;
     height: 57%;
     top: 30%;
     left: 53%;
 }
-div[id^='contenedor']{
+
+div[id^='contenedor'] {
     display: none;
 }
 
 #contenedor1 {
     display: block;
 }
+
 section#productoEstrella div.w3-display-middle preOrNext {
     cursor: pointer;
 }
-section#quienSoy .contentText {
-   text-align: center;
-}
-section#quienSoy img#imgMe {
-    height: 30vh;
-    margin-top: 12px;
-}
-section#quienSoy span#lema {
-    float: right;
-    font-style: italic;
-}
+
 .iconRight {
     position: absolute;
     top: 55%;
     right: 11%;
 }
+
 .iconLeft {
     position: absolute;
     top: 55%;
     left: 11%;
 }
+
 .maquinaEscribir {
     position: relative;
     float: left;
@@ -122,26 +141,31 @@ section#quienSoy span#lema {
     color: #fff;
     font-size: 2.5em;
 }
+
 .maquinaEscribir span {
-    position:absolute;
-    right:0;
-    width:0;
+    position: absolute;
+    right: 0;
+    width: 0;
     /*background: tomato;    */
     animation: escribir 3s steps(30) alternate;
 }
-.iconUp, .iconDown{
+
+.iconUp,
+.iconDown {
     transition: .3s;
 }
-.iconUp:hover, .iconDown:hover{
+
+.iconUp:hover,
+.iconDown:hover {
     animation: .5s animacion infinite;
 }
+
 .sweet-alert {
     text-shadow: none !important;
 }
-@keyframes animacion {
-    0% {
 
-    }
+@keyframes animacion {
+    0% {}
     50% {
         transform: translateY(7px);
     }
@@ -151,8 +175,10 @@ section#quienSoy span#lema {
 }
 
 
+
 /*Responsive desing para dispositivos móviles */
-@media screen and (max-width: 650px){
+
+@media screen and (max-width: 650px) {
 
 
     /*Correr botones de down y up */
@@ -160,37 +186,20 @@ section#quienSoy span#lema {
         left: 41% !important;
     }
     /*Cambiar tamaño del titulo principal*/
-    section#home h1{
+    section#home h1 {
         text-align: center;
         font-size: 50px !important;
     }
     section#quienSoy h1 {
-       font-size: 30px !important;
-    }
-
-    section#quienSoy div.contentText {
-        height: 65vh;
+        font-size: 30px !important;
     }
     section#queSe h1 {
         font-size: 40px !important;
     }
-    section#queSe img {
-        width: 50%;
+    section#queSe p {
+        height: 490px;
+        overflow: scroll;
     }
-    section#queSe .contentImages {
-        width: 50vw;
-        height: 55vh;
-        overflow-x: scroll;
-    }
-
-
-    section#portafolio .contentText, section#quienSoy .contentText {
-        /*background: red;*/
-        width: 62vw;
-        height: 55vh;
-        overflow-x: scroll;
-    }
-
     section#portafolio h1 {
         font-size: 32px !important;
     }
@@ -210,45 +219,41 @@ section#quienSoy span#lema {
     }
 
     section#productoEstrella div.w3-display-middle preOrNext {
-    margin: -20px;
+        margin: -20px;
     }
 
 
     /*INCIO RESPONSIVE DESING INICIOAPP*/
     /*Cambiar tamaño de todos los titulos de incioApp*/
-    section[id^='inicioApp'] h1{
+    section[id^='inicioApp'] h1 {
         text-align: center;
         font-size: 60px !important;
     }
     /*Cambiar tamaño de todas las descripciones del inicioApp*/
-    section[id^='inicioApp'] p{
+    section[id^='inicioApp'] p {
         font-size: 20px !important;
     }
     /*FIN RESPOSIVE DESING INICIOAPP*/
-
     /*INCIO RESPONSIVE DESING PROXIMOPARTIDO*/
-    section[id^='proximoPartido'] h1{
+    section[id^='proximoPartido'] h1 {
         text-align: center;
         font-size: 60px !important;
     }
     /*Cambiar tamaño de todas las descripciones del inicioApp*/
-    section[id^='proximoPartido'] p{
+    section[id^='proximoPartido'] p {
         font-size: 20px !important;
     }
-     /*FIN RESPOSIVE DESING PROXIMOPARTIDO*/
-
-     /*INCIO RESPONSIVE DESING RESULTADO*/
-    section[id^='resultado'] h1, section[id^='tablaPosiciones'] h1{
+    /*FIN RESPOSIVE DESING PROXIMOPARTIDO*/
+    /*INCIO RESPONSIVE DESING RESULTADO*/
+    section[id^='resultado'] h1,
+    section[id^='tablaPosiciones'] h1 {
         text-align: center;
         font-size: 60px !important;
     }
     /*Cambiar tamaño de todas las descripciones del inicioApp*/
-    section[id^='resultado'] p, section[id^='tablaPosiciones'] p{
+    section[id^='resultado'] p,
+    section[id^='tablaPosiciones'] p {
         font-size: 20px !important;
     }
-     /*FIN RESPOSIVE DESING RESULTADO*/
-
-
-
-
+    /*FIN RESPOSIVE DESING RESULTADO*/
 }
